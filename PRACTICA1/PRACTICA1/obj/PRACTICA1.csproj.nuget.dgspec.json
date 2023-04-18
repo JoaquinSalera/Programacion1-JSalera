@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Joaquin\\source\\repos\\PRACTICA1\\PRACTICA1\\PRACTICA1.csproj": {}
+    "C:\\Users\\Joaquin\\Documents\\GitHub\\Programacion1-JSalera\\PRACTICA1\\PRACTICA1\\PRACTICA1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Joaquin\\source\\repos\\PRACTICA1\\PRACTICA1\\PRACTICA1.csproj": {
+    "C:\\Users\\Joaquin\\Documents\\GitHub\\Programacion1-JSalera\\PRACTICA1\\PRACTICA1\\PRACTICA1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Joaquin\\source\\repos\\PRACTICA1\\PRACTICA1\\PRACTICA1.csproj",
+        "projectUniqueName": "C:\\Users\\Joaquin\\Documents\\GitHub\\Programacion1-JSalera\\PRACTICA1\\PRACTICA1\\PRACTICA1.csproj",
         "projectName": "PRACTICA1",
-        "projectPath": "C:\\Users\\Joaquin\\source\\repos\\PRACTICA1\\PRACTICA1\\PRACTICA1.csproj",
+        "projectPath": "C:\\Users\\Joaquin\\Documents\\GitHub\\Programacion1-JSalera\\PRACTICA1\\PRACTICA1\\PRACTICA1.csproj",
         "packagesPath": "C:\\Users\\Joaquin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Joaquin\\source\\repos\\PRACTICA1\\PRACTICA1\\obj\\",
+        "outputPath": "C:\\Users\\Joaquin\\Documents\\GitHub\\Programacion1-JSalera\\PRACTICA1\\PRACTICA1\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
