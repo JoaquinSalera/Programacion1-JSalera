@@ -8,7 +8,7 @@ namespace Back.Clases
 {
     public enum TipoCtaBank
     {
-        Corriente, Ahorro 
+        Corriente, Ahorro
     }
     public
         class CuentaBancaria
@@ -19,6 +19,11 @@ namespace Back.Clases
         public double SaldoCtaBank { get; set; }
 
         public TipoCtaBank TipoCta { get; set; }
+        public double Deposito { get; set; }
+        public double Extracion { get; set; }
 
     }
+
+    // DepositoCB() SaldoCtaBank = SaldoCtaBank + Deposito
+    //ExtraccionCB() SaldoCtaBank = SaldoCtaBank - Extracion
 }

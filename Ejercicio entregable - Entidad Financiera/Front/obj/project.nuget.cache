@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ME8T70E5WYac2qBtl1jF13B0CRPg/HSrh+wwosxyf5v1/To4rQPtRTPkNmMSMANTNtdeo2fABr6ssInYWMdadQ==",
+  "dgSpecHash": "nzYICltywLn9rA4ZWOQtX8hV0Cj3yKa/Rl4+DSIMFNCS1sVyzRmPefbWn7wNhWBqCm7Tu69QtSNE4PdUWmYmHA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Joaquin\\source\\repos\\Ejercicio entregable - Entidad Financiera\\Front\\Front.csproj",
+  "projectFilePath": "C:\\Users\\Joaquin\\Documents\\GitHub\\Programacion1-JSalera\\Ejercicio entregable - Entidad Financiera\\Front\\Front.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Joaquin\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\Joaquin\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",

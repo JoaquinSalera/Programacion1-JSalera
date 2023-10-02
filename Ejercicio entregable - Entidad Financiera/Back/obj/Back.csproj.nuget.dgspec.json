@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Joaquin\\source\\repos\\Ejercicio entregable - Entidad Financiera\\Back\\Back.csproj": {}
+    "C:\\Users\\Joaquin\\Documents\\GitHub\\Programacion1-JSalera\\Ejercicio entregable - Entidad Financiera\\Back\\Back.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Joaquin\\source\\repos\\Ejercicio entregable - Entidad Financiera\\Back\\Back.csproj": {
+    "C:\\Users\\Joaquin\\Documents\\GitHub\\Programacion1-JSalera\\Ejercicio entregable - Entidad Financiera\\Back\\Back.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Joaquin\\source\\repos\\Ejercicio entregable - Entidad Financiera\\Back\\Back.csproj",
+        "projectUniqueName": "C:\\Users\\Joaquin\\Documents\\GitHub\\Programacion1-JSalera\\Ejercicio entregable - Entidad Financiera\\Back\\Back.csproj",
         "projectName": "Back",
-        "projectPath": "C:\\Users\\Joaquin\\source\\repos\\Ejercicio entregable - Entidad Financiera\\Back\\Back.csproj",
+        "projectPath": "C:\\Users\\Joaquin\\Documents\\GitHub\\Programacion1-JSalera\\Ejercicio entregable - Entidad Financiera\\Back\\Back.csproj",
         "packagesPath": "C:\\Users\\Joaquin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Joaquin\\source\\repos\\Ejercicio entregable - Entidad Financiera\\Back\\obj\\",
+        "outputPath": "C:\\Users\\Joaquin\\Documents\\GitHub\\Programacion1-JSalera\\Ejercicio entregable - Entidad Financiera\\Back\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

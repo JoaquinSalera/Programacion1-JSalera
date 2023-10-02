@@ -15,6 +15,7 @@ namespace Back.Clases
         public int id { get; set; }
         public int NroTCred { get; set; }
         public EstadoTcred EstadoTC { get; set; }
+        public double SaldoResumen {  get; set; }
 
     }
 }
