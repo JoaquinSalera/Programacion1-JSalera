@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Front
 {
-    public partial class Form1 : Form
+    public partial class FrmExtraccionCB : Form
     {
-        public Form1()
+        public FrmExtraccionCB()
         {
             InitializeComponent();
         }

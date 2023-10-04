@@ -10,11 +10,21 @@ using System.Windows.Forms;
 
 namespace Front
 {
-    public partial class Prueba : Form
+    public partial class FrmDeposito : Form
     {
-        public Prueba()
+        public FrmDeposito()
         {
             InitializeComponent();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

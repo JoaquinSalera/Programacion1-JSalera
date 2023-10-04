@@ -10,7 +10,10 @@
     <Compile Update="ABM\FrmTatjetaCred.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Form1.cs">
+    <Compile Update="FrmExtraccionCB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FrmPagarTC.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Login.cs">
@@ -19,7 +22,7 @@
     <Compile Update="PantInicio.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Prueba.cs">
+    <Compile Update="FrmDeposito.cs">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>
