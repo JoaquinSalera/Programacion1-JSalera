@@ -51,32 +51,40 @@ namespace Back
         }
 
 
-
-        public void RealizarDeposito(CuentaBancaria CbDeposito)
-        {
-            var CBencontrada = context.CuentaBancarias.Find(CbDeposito.id);
-            if (CBencontrada != null)
-                CBencontrada.SaldoCtaBank = CbDeposito.SaldoCtaBank;
-
-            context.SaveChanges();
-        }
-        public void RealizarExtraccion(CuentaBancaria CbExtraccion)
+        public void RealizarExtraccion(CuentaBancaria CbExtraccion, double MontoExtr)
         {
             var CBencontrada = context.CuentaBancarias.Find(CbExtraccion.id);
             if (CBencontrada != null)
-                CBencontrada.SaldoCtaBank = CbExtraccion.SaldoCtaBank;
+                CBencontrada.SaldoCtaBank = CbExtraccion.SaldoCtaBank - MontoExtr;
 
             context.SaveChanges();
         }
+        public void RealizarDeposito(CuentaBancaria CbExtraccion, double Montodep)
+        {
+            var CBencontrada = context.CuentaBancarias.Find(CbExtraccion.id);
+            if (CBencontrada != null)
+                CBencontrada.SaldoCtaBank = CbExtraccion.SaldoCtaBank + Montodep;
 
-        public void PagarTarjetaCredito(TarjetaCredito PagarTC)
+            context.SaveChanges();
+        }
+        public void PagarTarjetaCredito(TarjetaCredito PagarTC,double Monto)
         {
             var TcEncontrada = context.TarjetaCreditos.Find(PagarTC.id);
             if (TcEncontrada != null)
-                TcEncontrada.SaldoResumen = PagarTC.SaldoResumen;
+                TcEncontrada.Montodeuda = PagarTC.Montodeuda -  Monto;
+                TcEncontrada.Saldodisponible = PagarTC.Saldodisponible + Monto;
 
             context.SaveChanges();
         }
-        GenerarResumenTarjeta() :
+
+
+       //public string GenerarResumenTarjeta(TarjetaCredito Tcreresumen)
+       //{
+       //     var TcEncontrada = context.TarjetaCreditos.Find(Tcreresumen.id);
+       //     if (TcEncontrada != null)
+       //         return Tcreresumen.Tresumn;
+       //     context.SaveChanges();
+       // }
+
     }
 }
