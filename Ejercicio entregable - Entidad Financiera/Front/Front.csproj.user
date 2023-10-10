@@ -10,10 +10,13 @@
     <Compile Update="ABM\FrmTatjetaCred.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="FrmExtraccionCB.cs">
+    <Compile Update="Operaciones\FrmConsultaSaldo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="FrmPagarTC.cs">
+    <Compile Update="Operaciones\FrmExtraccionCB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Operaciones\FrmPagarTC.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Login.cs">
@@ -22,7 +25,7 @@
     <Compile Update="PantInicio.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="FrmDeposito.cs">
+    <Compile Update="Operaciones\FrmDeposito.cs">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>

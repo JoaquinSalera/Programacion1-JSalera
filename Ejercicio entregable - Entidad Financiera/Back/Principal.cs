@@ -1,5 +1,6 @@
 ﻿using Back.Clases;
 using Back.ConexionBD;
+using System;
 
 namespace Back
 {
@@ -12,31 +13,44 @@ namespace Back
             context.Clientes.Add(clienteNuevo);
             context.SaveChanges();
         }
-        public void EliminarClientes(int IdCliente)
-        {
-            var clienteencontrado = context.Clientes.Find(IdCliente);
-            if (clienteencontrado != null)
-                context.Clientes.Remove(clienteencontrado);
-            context.SaveChanges();
-        }
-        public void ModificarClientes(Cliente ClienteModificado)
-        {
-            var clienteencontrado = context.Clientes.Find(ClienteModificado.id);
-            if (clienteencontrado != null)
-                clienteencontrado.DNICliente = ClienteModificado.DNICliente;
 
-            context.SaveChanges();
-        }
-        public void EmitirTarjetaCredito(TarjetaCredito tarjetadecredito)
+        public void EmitirTarjetaCredito(TarjetaCredito tarjetadecredito, Cliente cliente,string Tipotc)
         {
-            context.TarjetaCreditos.Add(tarjetadecredito);
-            context.SaveChanges();
-        }
+            TarjetaCredito nuevatarjeta = new TarjetaCredito();
+
+            var NrotC = int.Parse("524300000000" + cliente.DNICliente.ToString());
 
 
-        public void CrearCuentaBancaria(CuentaBancaria cuentabancaria)
+            nuevatarjeta.NroTCred = NrotC;
+            nuevatarjeta.LimiteTC = 1500000;
+            nuevatarjeta.Saldodisponible = 1500000;
+            nuevatarjeta.EstadoTC = Tipotc; //Activa, Pausada, Bloqueada
+            nuevatarjeta.Montodeuda = 0;
+            context.TarjetaCreditos.Add(nuevatarjeta);
+            context.SaveChanges();
+        }
+    
+
+
+        public void CrearCuentaBancaria(CuentaBancaria cuentabancaria, Cliente cliente, string Tipo)
         {
-            context.CuentaBancarias.Add(cuentabancaria);
+            CuentaBancaria nuevacuentabancaria = new CuentaBancaria();
+            var Nrocta = 0;
+            if (cuentabancaria.TipoCta == "CuentaCorriente")
+            {
+                Nrocta = int.Parse("444400000000" + cliente.DNICliente.ToString());
+            }
+            else 
+            { 
+                Nrocta = int.Parse("442200000000" + cliente.DNICliente.ToString());
+            }
+
+            nuevacuentabancaria.NroCtaBank = Nrocta;
+            nuevacuentabancaria.SaldoCtaBank = 0;
+            nuevacuentabancaria.TipoCta = Tipo;
+
+
+            context.CuentaBancarias.Add(nuevacuentabancaria);
             context.SaveChanges();
         }
 
@@ -78,13 +92,18 @@ namespace Back
         }
 
 
-       //public string GenerarResumenTarjeta(TarjetaCredito Tcreresumen)
-       //{
-       //     var TcEncontrada = context.TarjetaCreditos.Find(Tcreresumen.id);
-       //     if (TcEncontrada != null)
-       //         return Tcreresumen.Tresumn;
-       //     context.SaveChanges();
-       // }
+        //public string GenerarResumenTarjeta(TarjetaCredito Tcreresumen)
+        //{
+            //var TcEncontrada = context.TarjetaCreditos.Find(Tcreresumen.id);
+            //if (TcEncontrada != null)
+            //{
+            //    return Tcreresumen;
+
+
+            //}
+            //else { return "Cliente no encontrado"; }
+            
+        //}
 
     }
 }

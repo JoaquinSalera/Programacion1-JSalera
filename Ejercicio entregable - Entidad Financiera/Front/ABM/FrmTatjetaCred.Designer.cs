@@ -28,42 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
-            button4 = new Button();
-            button3 = new Button();
             ListaTCred = new ListBox();
-            TxtNom = new TextBox();
             button2 = new Button();
             button1 = new Button();
-            label4 = new Label();
-            label3 = new Label();
-            label2 = new Label();
             label1 = new Label();
-            DTFCierre = new DateTimePicker();
-            DTFVenc = new DateTimePicker();
             label5 = new Label();
             comboBox1 = new ComboBox();
             label6 = new Label();
+            textBox1 = new TextBox();
             SuspendLayout();
-            // 
-            // button4
-            // 
-            button4.Location = new Point(597, 286);
-            button4.Name = "button4";
-            button4.Size = new Size(75, 23);
-            button4.TabIndex = 26;
-            button4.Text = "Eliminar";
-            button4.UseVisualStyleBackColor = true;
-            button4.Click += button4_Click;
-            // 
-            // button3
-            // 
-            button3.Location = new Point(502, 286);
-            button3.Name = "button3";
-            button3.Size = new Size(75, 23);
-            button3.TabIndex = 25;
-            button3.Text = "Modificar";
-            button3.UseVisualStyleBackColor = true;
-            button3.Click += button3_Click;
             // 
             // ListaTCred
             // 
@@ -74,14 +47,6 @@
             ListaTCred.Size = new Size(313, 169);
             ListaTCred.TabIndex = 24;
             ListaTCred.SelectedIndexChanged += ListaClientes_SelectedIndexChanged;
-            // 
-            // TxtNom
-            // 
-            TxtNom.Location = new Point(152, 76);
-            TxtNom.Name = "TxtNom";
-            TxtNom.Size = new Size(100, 23);
-            TxtNom.TabIndex = 21;
-            TxtNom.TextChanged += TxtNom_TextChanged;
             // 
             // button2
             // 
@@ -103,36 +68,6 @@
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
             // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.Location = new Point(31, 200);
-            label4.Name = "label4";
-            label4.Size = new Size(75, 15);
-            label4.TabIndex = 18;
-            label4.Text = "Fecha Cierre:";
-            label4.Click += label4_Click;
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Location = new Point(31, 255);
-            label3.Name = "label3";
-            label3.Size = new Size(110, 15);
-            label3.TabIndex = 17;
-            label3.Text = "Fecha Vencimiento:";
-            label3.Click += label3_Click;
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Location = new Point(31, 76);
-            label2.Name = "label2";
-            label2.Size = new Size(70, 15);
-            label2.TabIndex = 16;
-            label2.Text = "Numero TC:";
-            label2.Click += label2_Click;
-            // 
             // label1
             // 
             label1.AutoSize = true;
@@ -142,20 +77,6 @@
             label1.TabIndex = 15;
             label1.Text = "TARJETAS DE CREDITO:";
             label1.Click += label1_Click;
-            // 
-            // DTFCierre
-            // 
-            DTFCierre.Location = new Point(152, 200);
-            DTFCierre.Name = "DTFCierre";
-            DTFCierre.Size = new Size(200, 23);
-            DTFCierre.TabIndex = 27;
-            // 
-            // DTFVenc
-            // 
-            DTFVenc.Location = new Point(152, 247);
-            DTFVenc.Name = "DTFVenc";
-            DTFVenc.Size = new Size(200, 23);
-            DTFVenc.TabIndex = 28;
             // 
             // label5
             // 
@@ -179,29 +100,30 @@
             label6.AutoSize = true;
             label6.Location = new Point(31, 121);
             label6.Name = "label6";
-            label6.Size = new Size(44, 15);
+            label6.Size = new Size(67, 15);
             label6.TabIndex = 31;
-            label6.Text = "Cliente";
+            label6.Text = "DNI Cliente";
+            label6.Click += label6_Click;
+            // 
+            // textBox1
+            // 
+            textBox1.Location = new Point(152, 117);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(121, 23);
+            textBox1.TabIndex = 32;
             // 
             // FrmTatjetaCred
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(textBox1);
             Controls.Add(label6);
             Controls.Add(comboBox1);
             Controls.Add(label5);
-            Controls.Add(DTFVenc);
-            Controls.Add(DTFCierre);
-            Controls.Add(button4);
-            Controls.Add(button3);
             Controls.Add(ListaTCred);
-            Controls.Add(TxtNom);
             Controls.Add(button2);
             Controls.Add(button1);
-            Controls.Add(label4);
-            Controls.Add(label3);
-            Controls.Add(label2);
             Controls.Add(label1);
             Name = "FrmTatjetaCred";
             Text = "FrmTatjetaCred";
@@ -210,21 +132,13 @@
         }
 
         #endregion
-
-        private Button button4;
-        private Button button3;
         private ListBox ListaTCred;
-        private TextBox TxtNom;
         private Button button2;
         private Button button1;
-        private Label label4;
-        private Label label3;
-        private Label label2;
         private Label label1;
-        private DateTimePicker DTFCierre;
-        private DateTimePicker DTFVenc;
         private Label label5;
         private ComboBox comboBox1;
         private Label label6;
+        private TextBox textBox1;
     }
 }

@@ -28,21 +28,22 @@
         /// </summary>
         private void InitializeComponent()
         {
-            textBox1 = new TextBox();
+            TxtCBank = new TextBox();
             label1 = new Label();
             label2 = new Label();
-            textBox2 = new TextBox();
-            button1 = new Button();
-            button3 = new Button();
+            TxtMonto = new TextBox();
+            btnConfir = new Button();
+            btnVolver = new Button();
             label3 = new Label();
             SuspendLayout();
             // 
-            // textBox1
+            // TxtCBank
             // 
-            textBox1.Location = new Point(157, 59);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(133, 23);
-            textBox1.TabIndex = 0;
+            TxtCBank.Location = new Point(157, 59);
+            TxtCBank.Name = "TxtCBank";
+            TxtCBank.Size = new Size(133, 23);
+            TxtCBank.TabIndex = 0;
+            TxtCBank.TextChanged += TxtCBank_TextChanged;
             // 
             // label1
             // 
@@ -63,40 +64,41 @@
             label2.TabIndex = 3;
             label2.Text = "Monto a Depositar";
             // 
-            // textBox2
+            // TxtMonto
             // 
-            textBox2.Location = new Point(190, 152);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(100, 23);
-            textBox2.TabIndex = 4;
+            TxtMonto.Location = new Point(190, 152);
+            TxtMonto.Name = "TxtMonto";
+            TxtMonto.Size = new Size(100, 23);
+            TxtMonto.TabIndex = 4;
             // 
-            // button1
+            // btnConfir
             // 
-            button1.Location = new Point(215, 261);
-            button1.Name = "button1";
-            button1.Size = new Size(75, 23);
-            button1.TabIndex = 5;
-            button1.Text = "Confirmar";
-            button1.UseVisualStyleBackColor = true;
+            btnConfir.Location = new Point(215, 261);
+            btnConfir.Name = "btnConfir";
+            btnConfir.Size = new Size(75, 23);
+            btnConfir.TabIndex = 5;
+            btnConfir.Text = "Confirmar";
+            btnConfir.UseVisualStyleBackColor = true;
+            btnConfir.Click += button1_Click;
             // 
-            // button3
+            // btnVolver
             // 
-            button3.Location = new Point(31, 261);
-            button3.Name = "button3";
-            button3.Size = new Size(75, 23);
-            button3.TabIndex = 7;
-            button3.Text = "Volver";
-            button3.UseVisualStyleBackColor = true;
-            button3.Click += button3_Click;
+            btnVolver.Location = new Point(31, 261);
+            btnVolver.Name = "btnVolver";
+            btnVolver.Size = new Size(75, 23);
+            btnVolver.TabIndex = 7;
+            btnVolver.Text = "Volver";
+            btnVolver.UseVisualStyleBackColor = true;
+            btnVolver.Click += button3_Click;
             // 
             // label3
             // 
             label3.AutoSize = true;
             label3.Location = new Point(12, 18);
             label3.Name = "label3";
-            label3.Size = new Size(103, 15);
+            label3.Size = new Size(73, 15);
             label3.TabIndex = 8;
-            label3.Text = "Depósito Bancario";
+            label3.Text = "Extracciones";
             // 
             // FrmDeposito
             // 
@@ -104,12 +106,12 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(416, 340);
             Controls.Add(label3);
-            Controls.Add(button3);
-            Controls.Add(button1);
-            Controls.Add(textBox2);
+            Controls.Add(btnVolver);
+            Controls.Add(btnConfir);
+            Controls.Add(TxtMonto);
             Controls.Add(label2);
             Controls.Add(label1);
-            Controls.Add(textBox1);
+            Controls.Add(TxtCBank);
             Name = "FrmDeposito";
             Text = "Prueba";
             ResumeLayout(false);
@@ -118,12 +120,12 @@
 
         #endregion
 
-        private TextBox textBox1;
+        private TextBox TxtCBank;
         private Label label1;
         private Label label2;
-        private TextBox textBox2;
-        private Button button1;
-        private Button button3;
+        private TextBox TxtMonto;
+        private Button btnConfir;
+        private Button btnVolver;
         private Label label3;
     }
 }

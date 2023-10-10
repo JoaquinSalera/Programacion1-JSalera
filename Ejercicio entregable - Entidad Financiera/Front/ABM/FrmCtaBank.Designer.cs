@@ -28,40 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
-            button4 = new Button();
-            button3 = new Button();
             ListaCuentasBancarias = new ListBox();
             TxtCliente = new TextBox();
-            TxtApeC = new TextBox();
-            TxtNumCB = new TextBox();
             button2 = new Button();
             button1 = new Button();
             label4 = new Label();
             label3 = new Label();
-            label2 = new Label();
             label1 = new Label();
             CbTipoCBan = new ComboBox();
             SuspendLayout();
-            // 
-            // button4
-            // 
-            button4.Location = new Point(603, 287);
-            button4.Name = "button4";
-            button4.Size = new Size(75, 23);
-            button4.TabIndex = 26;
-            button4.Text = "Eliminar";
-            button4.UseVisualStyleBackColor = true;
-            button4.Click += button4_Click;
-            // 
-            // button3
-            // 
-            button3.Location = new Point(508, 287);
-            button3.Name = "button3";
-            button3.Size = new Size(75, 23);
-            button3.TabIndex = 25;
-            button3.Text = "Modificar";
-            button3.UseVisualStyleBackColor = true;
-            button3.Click += button3_Click;
             // 
             // ListaCuentasBancarias
             // 
@@ -77,29 +52,13 @@
             // 
             TxtCliente.Location = new Point(158, 164);
             TxtCliente.Name = "TxtCliente";
-            TxtCliente.Size = new Size(100, 23);
-            TxtCliente.TabIndex = 23;
-            TxtCliente.TextChanged += TxtDNI_TextChanged;
-            // 
-            // TxtApeC
-            // 
-            TxtApeC.Location = new Point(158, 201);
-            TxtApeC.Name = "TxtApeC";
-            TxtApeC.Size = new Size(100, 23);
-            TxtApeC.TabIndex = 22;
-            TxtApeC.TextChanged += TxtApeC_TextChanged;
-            // 
-            // TxtNumCB
-            // 
-            TxtNumCB.Location = new Point(158, 77);
-            TxtNumCB.Name = "TxtNumCB";
-            TxtNumCB.Size = new Size(100, 23);
-            TxtNumCB.TabIndex = 21;
-            TxtNumCB.TextChanged += TxtNom_TextChanged;
+            TxtCliente.Size = new Size(145, 23);
+            TxtCliente.TabIndex = 22;
+            TxtCliente.TextChanged += TxtApeC_TextChanged;
             // 
             // button2
             // 
-            button2.Location = new Point(406, 287);
+            button2.Location = new Point(406, 265);
             button2.Name = "button2";
             button2.Size = new Size(75, 23);
             button2.TabIndex = 20;
@@ -122,9 +81,9 @@
             label4.AutoSize = true;
             label4.Location = new Point(37, 167);
             label4.Name = "label4";
-            label4.Size = new Size(44, 15);
+            label4.Size = new Size(70, 15);
             label4.TabIndex = 18;
-            label4.Text = "Cliente";
+            label4.Text = " DNI Cliente";
             label4.Click += label4_Click;
             // 
             // label3
@@ -136,16 +95,6 @@
             label3.TabIndex = 17;
             label3.Text = "Tipo";
             label3.Click += label3_Click;
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Location = new Point(37, 77);
-            label2.Name = "label2";
-            label2.Size = new Size(51, 15);
-            label2.TabIndex = 16;
-            label2.Text = "Número";
-            label2.Click += label2_Click;
             // 
             // label1
             // 
@@ -160,10 +109,12 @@
             // CbTipoCBan
             // 
             CbTipoCBan.FormattingEnabled = true;
+            CbTipoCBan.Items.AddRange(new object[] { "CuentaCorriente", "Caja De Ahorro" });
             CbTipoCBan.Location = new Point(158, 118);
             CbTipoCBan.Name = "CbTipoCBan";
-            CbTipoCBan.Size = new Size(100, 23);
+            CbTipoCBan.Size = new Size(145, 23);
             CbTipoCBan.TabIndex = 27;
+            CbTipoCBan.SelectedIndexChanged += CbTipoCBan_SelectedIndexChanged;
             // 
             // FrmCtaBank
             // 
@@ -171,20 +122,16 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 337);
             Controls.Add(CbTipoCBan);
-            Controls.Add(button4);
-            Controls.Add(button3);
             Controls.Add(ListaCuentasBancarias);
             Controls.Add(TxtCliente);
-            Controls.Add(TxtApeC);
-            Controls.Add(TxtNumCB);
             Controls.Add(button2);
             Controls.Add(button1);
             Controls.Add(label4);
             Controls.Add(label3);
-            Controls.Add(label2);
             Controls.Add(label1);
             Name = "FrmCtaBank";
             Text = "FrmCtaBank";
+            Load += FrmCtaBank_Load;
             ResumeLayout(false);
             PerformLayout();
         }
@@ -195,14 +142,12 @@
         private Button button3;
         private ListBox ListaCuentasBancarias;
         private TextBox TxtCliente;
-        private TextBox TxtApeC;
-        private TextBox TxtNumCB;
         private Button button2;
         private Button button1;
         private Label label4;
         private Label label3;
-        private Label label2;
         private Label label1;
         private ComboBox CbTipoCBan;
+        private ComboBox CboxCliente;
     }
 }

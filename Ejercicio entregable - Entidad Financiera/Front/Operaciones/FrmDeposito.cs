@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Back;
+using Back.Clases;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,6 +14,7 @@ namespace Front
 {
     public partial class FrmDeposito : Form
     {
+        Principal principal = new Principal();
         public FrmDeposito()
         {
             InitializeComponent();
@@ -23,6 +26,21 @@ namespace Front
         }
 
         private void button3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            TarjetaCredito Pagotarjeta = new TarjetaCredito();
+
+
+
+
+
+        }
+
+        private void TxtCBank_TextChanged(object sender, EventArgs e)
         {
 
         }

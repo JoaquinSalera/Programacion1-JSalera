@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Back;
+using Back.Clases;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,6 +14,7 @@ namespace Front
 {
     public partial class FrmCtaBank : Form
     {
+        Principal principal = new Principal();
         public FrmCtaBank()
         {
             InitializeComponent();
@@ -44,6 +47,15 @@ namespace Front
 
         private void button2_Click(object sender, EventArgs e)
         {
+            CuentaBancaria cuentaBancaria = new CuentaBancaria();
+
+
+
+
+
+ 
+
+
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -67,6 +79,17 @@ namespace Front
 
         private void button4_Click(object sender, EventArgs e)
         {
+        }
+
+        private void CbTipoCBan_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void FrmCtaBank_Load(object sender, EventArgs e)
+        {
+            //CboxCliente.DataSource = Cliente;
+
         }
     }
 }

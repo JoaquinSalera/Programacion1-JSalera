@@ -28,43 +28,26 @@
         /// </summary>
         private void InitializeComponent()
         {
-            button1 = new Button();
-            button2 = new Button();
-            button3 = new Button();
             button4 = new Button();
+            menuStrip1 = new MenuStrip();
+            clienteToolStripMenuItem = new ToolStripMenuItem();
+            cLIENTESToolStripMenuItem = new ToolStripMenuItem();
+            tARJETACREDITOToolStripMenuItem = new ToolStripMenuItem();
+            aBMToolStripMenuItem = new ToolStripMenuItem();
+            consultaResumenToolStripMenuItem = new ToolStripMenuItem();
+            pagarToolStripMenuItem = new ToolStripMenuItem();
+            cUENTABANCARIAToolStripMenuItem = new ToolStripMenuItem();
+            aBMToolStripMenuItem1 = new ToolStripMenuItem();
+            consultaSaldoToolStripMenuItem = new ToolStripMenuItem();
+            extraccionToolStripMenuItem = new ToolStripMenuItem();
+            depósitoToolStripMenuItem = new ToolStripMenuItem();
+            label1 = new Label();
+            menuStrip1.SuspendLayout();
             SuspendLayout();
-            // 
-            // button1
-            // 
-            button1.Location = new Point(137, 126);
-            button1.Name = "button1";
-            button1.Size = new Size(139, 61);
-            button1.TabIndex = 0;
-            button1.Text = "CLIENTE";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
-            // 
-            // button2
-            // 
-            button2.Location = new Point(324, 126);
-            button2.Name = "button2";
-            button2.Size = new Size(139, 61);
-            button2.TabIndex = 1;
-            button2.Text = "TARJETA DE CREDITO";
-            button2.UseVisualStyleBackColor = true;
-            // 
-            // button3
-            // 
-            button3.Location = new Point(504, 126);
-            button3.Name = "button3";
-            button3.Size = new Size(139, 61);
-            button3.TabIndex = 2;
-            button3.Text = "CUENTA BANCARIA";
-            button3.UseVisualStyleBackColor = true;
             // 
             // button4
             // 
-            button4.Location = new Point(32, 326);
+            button4.Location = new Point(691, 198);
             button4.Name = "button4";
             button4.Size = new Size(75, 23);
             button4.TabIndex = 7;
@@ -72,26 +55,136 @@
             button4.UseVisualStyleBackColor = true;
             button4.Click += button4_Click;
             // 
+            // menuStrip1
+            // 
+            menuStrip1.Items.AddRange(new ToolStripItem[] { clienteToolStripMenuItem });
+            menuStrip1.Location = new Point(0, 0);
+            menuStrip1.Name = "menuStrip1";
+            menuStrip1.Size = new Size(800, 24);
+            menuStrip1.TabIndex = 8;
+            menuStrip1.Text = "menuStrip1";
+            // 
+            // clienteToolStripMenuItem
+            // 
+            clienteToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { cLIENTESToolStripMenuItem, tARJETACREDITOToolStripMenuItem, cUENTABANCARIAToolStripMenuItem });
+            clienteToolStripMenuItem.Name = "clienteToolStripMenuItem";
+            clienteToolStripMenuItem.Size = new Size(54, 20);
+            clienteToolStripMenuItem.Text = "INICIO";
+            clienteToolStripMenuItem.Click += clienteToolStripMenuItem_Click;
+            // 
+            // cLIENTESToolStripMenuItem
+            // 
+            cLIENTESToolStripMenuItem.Name = "cLIENTESToolStripMenuItem";
+            cLIENTESToolStripMenuItem.Size = new Size(180, 22);
+            cLIENTESToolStripMenuItem.Text = "CLIENTES";
+            cLIENTESToolStripMenuItem.Click += cLIENTESToolStripMenuItem_Click;
+            // 
+            // tARJETACREDITOToolStripMenuItem
+            // 
+            tARJETACREDITOToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { aBMToolStripMenuItem, consultaResumenToolStripMenuItem, pagarToolStripMenuItem });
+            tARJETACREDITOToolStripMenuItem.Name = "tARJETACREDITOToolStripMenuItem";
+            tARJETACREDITOToolStripMenuItem.Size = new Size(180, 22);
+            tARJETACREDITOToolStripMenuItem.Text = "TARJETA CREDITO";
+            tARJETACREDITOToolStripMenuItem.Click += tARJETACREDITOToolStripMenuItem_Click;
+            // 
+            // aBMToolStripMenuItem
+            // 
+            aBMToolStripMenuItem.Name = "aBMToolStripMenuItem";
+            aBMToolStripMenuItem.Size = new Size(173, 22);
+            aBMToolStripMenuItem.Text = "ABM";
+            aBMToolStripMenuItem.Click += aBMToolStripMenuItem_Click;
+            // 
+            // consultaResumenToolStripMenuItem
+            // 
+            consultaResumenToolStripMenuItem.Name = "consultaResumenToolStripMenuItem";
+            consultaResumenToolStripMenuItem.Size = new Size(173, 22);
+            consultaResumenToolStripMenuItem.Text = "Consulta Resumen";
+            // 
+            // pagarToolStripMenuItem
+            // 
+            pagarToolStripMenuItem.Name = "pagarToolStripMenuItem";
+            pagarToolStripMenuItem.Size = new Size(173, 22);
+            pagarToolStripMenuItem.Text = "Pagar";
+            pagarToolStripMenuItem.Click += pagarToolStripMenuItem_Click;
+            // 
+            // cUENTABANCARIAToolStripMenuItem
+            // 
+            cUENTABANCARIAToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { aBMToolStripMenuItem1, consultaSaldoToolStripMenuItem, extraccionToolStripMenuItem, depósitoToolStripMenuItem });
+            cUENTABANCARIAToolStripMenuItem.Name = "cUENTABANCARIAToolStripMenuItem";
+            cUENTABANCARIAToolStripMenuItem.Size = new Size(180, 22);
+            cUENTABANCARIAToolStripMenuItem.Text = "CUENTA BANCARIA";
+            // 
+            // aBMToolStripMenuItem1
+            // 
+            aBMToolStripMenuItem1.Name = "aBMToolStripMenuItem1";
+            aBMToolStripMenuItem1.Size = new Size(180, 22);
+            aBMToolStripMenuItem1.Text = "ALTA";
+            aBMToolStripMenuItem1.Click += aBMToolStripMenuItem1_Click;
+            // 
+            // consultaSaldoToolStripMenuItem
+            // 
+            consultaSaldoToolStripMenuItem.Name = "consultaSaldoToolStripMenuItem";
+            consultaSaldoToolStripMenuItem.Size = new Size(180, 22);
+            consultaSaldoToolStripMenuItem.Text = "Consulta Saldo";
+            consultaSaldoToolStripMenuItem.Click += consultaSaldoToolStripMenuItem_Click;
+            // 
+            // extraccionToolStripMenuItem
+            // 
+            extraccionToolStripMenuItem.Name = "extraccionToolStripMenuItem";
+            extraccionToolStripMenuItem.Size = new Size(180, 22);
+            extraccionToolStripMenuItem.Text = "Extraccion";
+            extraccionToolStripMenuItem.Click += extraccionToolStripMenuItem_Click;
+            // 
+            // depósitoToolStripMenuItem
+            // 
+            depósitoToolStripMenuItem.Name = "depósitoToolStripMenuItem";
+            depósitoToolStripMenuItem.Size = new Size(180, 22);
+            depósitoToolStripMenuItem.Text = "Depósito";
+            depósitoToolStripMenuItem.Click += depósitoToolStripMenuItem_Click;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 36F, FontStyle.Regular, GraphicsUnit.Point);
+            label1.Location = new Point(168, 100);
+            label1.Name = "label1";
+            label1.Size = new Size(413, 65);
+            label1.TabIndex = 9;
+            label1.Text = "Entidad Financiera";
+            label1.Click += label1_Click;
+            // 
             // PantInicio
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(800, 257);
+            Controls.Add(label1);
             Controls.Add(button4);
-            Controls.Add(button3);
-            Controls.Add(button2);
-            Controls.Add(button1);
+            Controls.Add(menuStrip1);
+            MainMenuStrip = menuStrip1;
             Name = "PantInicio";
             Text = "PantInicio";
             Load += PantInicio_Load;
+            menuStrip1.ResumeLayout(false);
+            menuStrip1.PerformLayout();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
-
-        private Button button1;
-        private Button button2;
-        private Button button3;
         private Button button4;
+        private MenuStrip menuStrip1;
+        private ToolStripMenuItem clienteToolStripMenuItem;
+        private ToolStripMenuItem cLIENTESToolStripMenuItem;
+        private ToolStripMenuItem tARJETACREDITOToolStripMenuItem;
+        private ToolStripMenuItem aBMToolStripMenuItem;
+        private ToolStripMenuItem consultaResumenToolStripMenuItem;
+        private ToolStripMenuItem pagarToolStripMenuItem;
+        private ToolStripMenuItem cUENTABANCARIAToolStripMenuItem;
+        private ToolStripMenuItem aBMToolStripMenuItem1;
+        private ToolStripMenuItem consultaSaldoToolStripMenuItem;
+        private ToolStripMenuItem extraccionToolStripMenuItem;
+        private ToolStripMenuItem depósitoToolStripMenuItem;
+        private Label label1;
     }
 }

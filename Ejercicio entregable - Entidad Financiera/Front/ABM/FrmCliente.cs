@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Back;
+using Back.Clases;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,6 +14,7 @@ namespace Front
 {
     public partial class FrmCliente : Form
     {
+        Principal principal = new Principal();
         public FrmCliente()
         {
             InitializeComponent();
@@ -47,6 +50,25 @@ namespace Front
 
         private void button2_Click(object sender, EventArgs e)
         {
+            Cliente cliente = new Cliente();
+
+           
+            cliente.NomCliente = TxtNom.Text;
+            cliente.ApeCliente = TxtApeC.Text;
+            cliente.DNICliente = int.Parse(TxtDNI.Text);
+            principal.AgregarClientes(cliente);
+
+            //BindingSource binf = new BindingSource(context.Clientes);
+
+            //ListaClientes.DataSource = null;
+            //ListaClientes.DisplayMember = "CB";
+            //ListaClientes.DataSource = principal;
+
+            MessageBox.Show("Cliente Agregado");
+
+            TxtNom.Clear();
+            TxtApeC.Clear();
+            TxtDNI.Clear();
         }
 
         private void button4_Click(object sender, EventArgs e)

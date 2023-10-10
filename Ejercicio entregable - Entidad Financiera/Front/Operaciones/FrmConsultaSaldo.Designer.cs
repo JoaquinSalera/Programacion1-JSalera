@@ -1,6 +1,6 @@
-﻿namespace Front
+﻿namespace Front.Operaciones
 {
-    partial class FrmPagarTC
+    partial class FrmConsultaSaldo
     {
         /// <summary>
         /// Required designer variable.
@@ -30,13 +30,14 @@
         {
             SuspendLayout();
             // 
-            // FrmPagarTC
+            // FrmConsultaSaldo
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Name = "FrmPagarTC";
-            Text = "Form1";
+            Name = "FrmConsultaSaldo";
+            Text = "FrmConsultaSaldo";
+            Load += FrmConsultaSaldo_Load;
             ResumeLayout(false);
         }
 

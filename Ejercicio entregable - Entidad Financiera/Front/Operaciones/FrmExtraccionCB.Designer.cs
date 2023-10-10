@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             label1 = new Label();
-            button3 = new Button();
-            button1 = new Button();
-            textBox2 = new TextBox();
+            BtnVolver = new Button();
+            BtnConfi = new Button();
+            TxtMontoE = new TextBox();
             label2 = new Label();
             label3 = new Label();
-            textBox1 = new TextBox();
+            TxtCta = new TextBox();
             SuspendLayout();
             // 
             // label1
@@ -46,30 +46,30 @@
             label1.TabIndex = 2;
             label1.Text = "Extracción ";
             // 
-            // button3
+            // BtnVolver
             // 
-            button3.Location = new Point(50, 249);
-            button3.Name = "button3";
-            button3.Size = new Size(75, 23);
-            button3.TabIndex = 13;
-            button3.Text = "Volver";
-            button3.UseVisualStyleBackColor = true;
+            BtnVolver.Location = new Point(50, 249);
+            BtnVolver.Name = "BtnVolver";
+            BtnVolver.Size = new Size(75, 23);
+            BtnVolver.TabIndex = 13;
+            BtnVolver.Text = "Volver";
+            BtnVolver.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // BtnConfi
             // 
-            button1.Location = new Point(234, 249);
-            button1.Name = "button1";
-            button1.Size = new Size(75, 23);
-            button1.TabIndex = 12;
-            button1.Text = "Confirmar";
-            button1.UseVisualStyleBackColor = true;
+            BtnConfi.Location = new Point(234, 249);
+            BtnConfi.Name = "BtnConfi";
+            BtnConfi.Size = new Size(75, 23);
+            BtnConfi.TabIndex = 12;
+            BtnConfi.Text = "Confirmar";
+            BtnConfi.UseVisualStyleBackColor = true;
             // 
-            // textBox2
+            // TxtMontoE
             // 
-            textBox2.Location = new Point(209, 140);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(100, 23);
-            textBox2.TabIndex = 11;
+            TxtMontoE.Location = new Point(209, 140);
+            TxtMontoE.Name = "TxtMontoE";
+            TxtMontoE.Size = new Size(100, 23);
+            TxtMontoE.TabIndex = 11;
             // 
             // label2
             // 
@@ -89,24 +89,24 @@
             label3.TabIndex = 9;
             label3.Text = "Cuenta Bancaria";
             // 
-            // textBox1
+            // TxtCta
             // 
-            textBox1.Location = new Point(176, 47);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(133, 23);
-            textBox1.TabIndex = 8;
+            TxtCta.Location = new Point(176, 47);
+            TxtCta.Name = "TxtCta";
+            TxtCta.Size = new Size(133, 23);
+            TxtCta.TabIndex = 8;
             // 
             // FrmExtraccionCB
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(409, 325);
-            Controls.Add(button3);
-            Controls.Add(button1);
-            Controls.Add(textBox2);
+            Controls.Add(BtnVolver);
+            Controls.Add(BtnConfi);
+            Controls.Add(TxtMontoE);
             Controls.Add(label2);
             Controls.Add(label3);
-            Controls.Add(textBox1);
+            Controls.Add(TxtCta);
             Controls.Add(label1);
             Name = "FrmExtraccionCB";
             Text = "FrmExtraccionCB";
@@ -117,11 +117,11 @@
         #endregion
 
         private Label label1;
-        private Button button3;
-        private Button button1;
-        private TextBox textBox2;
+        private Button BtnVolver;
+        private Button BtnConfi;
+        private TextBox TxtMontoE;
         private Label label2;
         private Label label3;
-        private TextBox textBox1;
+        private TextBox TxtCta;
     }
 }

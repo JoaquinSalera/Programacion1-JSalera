@@ -116,4 +116,7 @@ C:\Users\Joaquin\Documents\GitHub\Programacion1-JSalera\Ejercicio entregable - E
 C:\Users\Joaquin\Documents\GitHub\Programacion1-JSalera\Ejercicio entregable - Entidad Financiera\Front\obj\Debug\net6.0-windows\Front.pdb
 C:\Users\Joaquin\Documents\GitHub\Programacion1-JSalera\Ejercicio entregable - Entidad Financiera\Front\obj\Debug\net6.0-windows\Front.genruntimeconfig.cache
 C:\Users\Joaquin\Documents\GitHub\Programacion1-JSalera\Ejercicio entregable - Entidad Financiera\Front\obj\Debug\net6.0-windows\ref\Front.dll
-C:\Users\Joaquin\Documents\GitHub\Programacion1-JSalera\Ejercicio entregable - Entidad Financiera\Front\obj\Debug\net6.0-windows\Front.Prueba.resources
+C:\Users\Joaquin\Documents\GitHub\Programacion1-JSalera\Ejercicio entregable - Entidad Financiera\Front\obj\Debug\net6.0-windows\Front.FrmDeposito.resources
+C:\Users\Joaquin\Documents\GitHub\Programacion1-JSalera\Ejercicio entregable - Entidad Financiera\Front\obj\Debug\net6.0-windows\Front.FrmExtraccionCB.resources
+C:\Users\Joaquin\Documents\GitHub\Programacion1-JSalera\Ejercicio entregable - Entidad Financiera\Front\obj\Debug\net6.0-windows\Front.FrmPagarTC.resources
+C:\Users\Joaquin\Documents\GitHub\Programacion1-JSalera\Ejercicio entregable - Entidad Financiera\Front\obj\Debug\net6.0-windows\Front.Operaciones.FrmConsultaSaldo.resources

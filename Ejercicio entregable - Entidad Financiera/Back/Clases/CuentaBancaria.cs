@@ -3,13 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Timers;
 
 namespace Back.Clases
 {
-    public enum TipoCtaBank
-    {
-        Cta_Corriente, Caja_Ahorro
-    }
+
     public
         class CuentaBancaria
     {
@@ -18,10 +16,11 @@ namespace Back.Clases
 
         public double SaldoCtaBank { get; set; }
 
-        public TipoCtaBank TipoCta { get; set; }
+        public string TipoCta { get; set; }
 
         public Cliente Cliente { get; set; }
 
+        public string CB { get { return "El numero de cuenta es: " + NroCtaBank + "Saldo: " + SaldoCtaBank + "Tipo Cta: " + TipoCta ; } }
 
     }
 

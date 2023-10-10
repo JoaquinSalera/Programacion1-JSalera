@@ -16,5 +16,15 @@ namespace Front
         {
             InitializeComponent();
         }
+
+        private void BtnPagar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BtnVolver_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
