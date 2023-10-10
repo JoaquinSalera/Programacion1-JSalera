@@ -18,12 +18,12 @@ namespace Back
         {
             TarjetaCredito nuevatarjeta = new TarjetaCredito();
 
-            var NrotC = int.Parse("524300000000" + cliente.DNICliente.ToString());
+            var NrotC = int.Parse("52430000" + cliente.DNICliente.ToString());
 
 
             nuevatarjeta.NroTCred = NrotC;
-            nuevatarjeta.LimiteTC = 1500000;
-            nuevatarjeta.Saldodisponible = 1500000;
+            nuevatarjeta.LimiteTC = 1500000;//ver de hacer logica para que sea un porcentaje del ingreso del cliente
+            nuevatarjeta.Saldodisponible = 1500000;//ver de que sea igual al limite definido
             nuevatarjeta.EstadoTC = Tipotc; //Activa, Pausada, Bloqueada
             nuevatarjeta.Montodeuda = 0;
             context.TarjetaCreditos.Add(nuevatarjeta);
